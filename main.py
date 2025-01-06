@@ -131,7 +131,7 @@ class ScheduleScreen(Screen):
         """入力内容を保存"""
         self.schedule_data[self.subject] = self.text_input.text
         self.save_schedule_data()
-        popup = Popup(title="保存完了", content=Label(text="予定を保存しました", font_name="Japanese"),
+        popup = Popup(title="saved", content=Label(text="予定を保存しました", font_name="Japanese"),
                       size_hint=(0.5, 0.5))
         popup.open()
 
